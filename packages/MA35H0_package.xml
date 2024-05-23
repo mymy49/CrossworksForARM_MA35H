@@ -1,0 +1,9 @@
+<!DOCTYPE CrossStudio_Package_Description_File>
+<package crossstudio_versions="8:4.10-" version="0.01" dependencies="CMSIS" cpu_family="MA35H0" author="Yoon-Ki Hong" name="MA35H0" cpu_manufacturer="Nuvoton" build_version="2024040700.00068;crossworks_v4;crossworks_v4" date="2024-02-24T00:00:00">
+	<targets>
+		<category name="MA35H0 Series">
+			<cpu name="MA35H04F764C"/>
+		</category>
+	</targets>
+</package>
+
