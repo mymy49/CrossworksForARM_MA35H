@@ -1,6 +1,6 @@
 # CPU Support package for the MA35H0 from Nuvoton
 
-This CPU Support package enables the development for the MA35H0 Microprocessor family using the [Crossworks development environment](https://rowley.co.uk/arm/index.htm) from Rowley. The package provides all needed data and information to enabled the Development Environment to compile and debug applications on the MA35H0 Microprocessor
+This CPU Support package enables the development for the MA35H0 Microprocessor family using the [Crossworks development environment](https://www.rowley.co.uk/arm/index.htm) from Rowley. The package provides all needed data and information to enabled the Development Environment to compile and debug applications on the MA35H0 Microprocessor
 This Includes:
 
 - CMSIS-Specific Code Files
