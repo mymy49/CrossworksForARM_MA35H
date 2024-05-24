@@ -1,15 +1,18 @@
 <!DOCTYPE CrossStudio_Project_File>
-<solution Name="WIZnet" target="8" version="2">
-  <project Name="WIZnet CPU Support">
+<solution Name="MA35H0" target="8" version="2">
+  <project Name="MA35H0 CPU Support">
     <configuration
       Name="Common"
-      combine_command="$(StudioDir)/bin/mkpkg -exclude ./Convert.sh -exclude ./Extract.sh -exclude ./WIZnet.hzp -exclude ./WIZnet.hzs -exclude ./WIZnet.hzq -exclude ./readme.md -exclude ./.gitignore -c &quot;$(CombiningOutputFilePath)&quot; ."
-      combine_output_filepath="$(ProjectDir)/WIZnet.hzq"
+      combine_command="$(StudioDir)/bin/mkpkg -exclude ./Convert.sh -exclude ./Extract.sh -exclude ./MA35H0.hzp -exclude ./MA35H0.hzs -exclude ./MA35H0.hzq -exclude ./readme.md -exclude ./.gitignore -c &quot;$(CombiningOutputFilePath)&quot; ."
+      combine_output_filepath="$(ProjectDir)/MA35H0.hzq"
       project_directory=""
       project_type="Combining" />
-    <folder Name="packages">
-      <file file_name="packages/WIZnet_package.xml" />
-    </folder>
+    <folder
+      Name="packages"
+      exclude=""
+      filter=""
+      path="packages"
+      recurse="Yes" />
     <folder
       Name="targets"
       exclude=""
