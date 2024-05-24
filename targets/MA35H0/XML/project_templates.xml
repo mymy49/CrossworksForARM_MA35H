@@ -1,0 +1,26 @@
+<projects>
+	<project cpu_manufacturer="Nuvoton" cpu_name="" cpu_generic_name="MA35H0" board_manufacturer="" board_name="" name="MA35H0 Series C/C++ Executable" description="A C/C++ executable for Nuvoton MA35H0 Series." type="Executable" template_name="MA35H0_EXE" template_target="1">
+		<property name="package_dependencies" value="MA35H0" />
+		<configuration name="THUMB Debug" />
+		<configuration name="THUMB Release" />
+		<property name="CMSIS_CORE" value="Yes" />
+		<property name="arm_interwork" value="Yes" />
+	    <property name="property_groups_file_path" value="$(TargetsDir)/MA35H0/XML/property_groups.xml" />
+		<property name="gcc_entry_point" value="Reset_Handler" />
+		<property name="linker_memory_map_file" value="$(DeviceMemoryMapFile)" />
+		<propertygroup name="Target" value="MA35H04F764C" choose="Yes" />
+		<propertygroup name="Placement" value="Flash" choose="Yes" />
+		<property name="target_reset_script" value="Reset();" />
+		<property name="linker_output_format" />
+		<property name="linker_printf_fmt_level" />
+		<property name="linker_printf_width_precision_supported" />
+		<property name="linker_printf_fp_enabled" />
+		<property name="linker_scanf_fmt_level" />
+		<property name="linker_scanf_fp_enabled" />
+		<property name="linker_scanf_character_group_matching_enabled" />
+		<property name="arm_linker_stack_size" value="1024" choose="Yes" />
+		<property name="arm_linker_process_stack_size" value="0" choose="Yes" />
+		<property name="arm_linker_heap_size" value="1024" choose="Yes" />
+		<property name="arm_target_interface_type" value="SWD" />
+	</project>
+</projects>
