@@ -1,5 +1,5 @@
 <!DOCTYPE CrossStudio_Package_Description_File>
-<package build_version="2024052400.00045;crossworks_v4;crossworks_v4" crossstudio_versions="8:4.10-" version="0.01" dependencies="CMSIS" filetype="hzq" cpu_family="MA35H0" author="Yoon-Ki Hong" name="MA35H0" cpu_manufacturer="Nuvoton" date="2024-05-24T00:00:00">
+<package build_version="2024052400.00047;crossworks_v4;crossworks_v4" crossstudio_versions="8:4.10-" version="0.01" dependencies="CMSIS" filetype="hzq" cpu_family="MA35H0" author="Yoon-Ki Hong" name="MA35H0" cpu_manufacturer="Nuvoton" date="2024-05-24T00:00:00">
 	<targets>
 		<category name="MA35H0 Series">
 			<cpu name="MA35H04F764C"/>
