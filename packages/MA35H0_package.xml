@@ -1,13 +1,9 @@
 <!DOCTYPE CrossStudio_Package_Description_File>
-<package crossstudio_versions="8:4.10-" version="0.01" dependencies="CMSIS" filetype="hzq" cpu_family="MA35H0" author="Yoon-Ki Hong" name="MA35H0" cpu_manufacturer="Nuvoton" build_version="2024052400.00015;crossworks_v4;crossworks_v4" date="2024-05-24T00:00:00">
+<package build_version="2024052400.00045;crossworks_v4;crossworks_v4" crossstudio_versions="8:4.10-" version="0.01" dependencies="CMSIS" filetype="hzq" cpu_family="MA35H0" author="Yoon-Ki Hong" name="MA35H0" cpu_manufacturer="Nuvoton" date="2024-05-24T00:00:00">
 	<targets>
 		<category name="MA35H0 Series">
 			<cpu name="MA35H04F764C"/>
 		</category>
 	</targets>
-	<installed_file file_name="packages/MA35H0_package.xml" crc32="0x0"/>
-	<installed_file file_name="targets/MA35H0/XML/MA35H0_MemoryMap.xml" crc32="0x64d9b634"/>
-	<installed_file file_name="targets/MA35H0/XML/project_templates.xml" crc32="0x4bb846fa"/>
-	<installed_file file_name="targets/MA35H0/XML/property_groups.xml" crc32="0xd21f4941"/>
 </package>
 

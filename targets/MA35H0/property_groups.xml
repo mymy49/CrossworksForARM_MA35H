@@ -1,0 +1,35 @@
+<!DOCTYPE CrossStudio_Group_Values>
+<propertyGroups>
+	<group short="Target Processor" group="Build Options" long="Select a set of target options" name="Target" default="MA35H04F764C">
+		<groupEntry name="MA35H04F764C" family="MA35H0 Series">
+			<property name="arm_architecture" value="v8A" />
+			<property name="arm_core_type" value="Cortex-A35" />
+			<property name="arm_endian" value="Little" />
+			<property name="arm_fpu_type" value="None" />
+			<property name="arm_fp_abi" value="Soft" />
+			<property name="arm_simulator_memory_simulation_parameter" value="ROM;0x00000000;0x00040000;RAM;0x24000000;0x00020000" />
+			<property name="arm_target_device_name" value="MA35H04F764C" />
+			<property name="linker_memory_map_file" value="$(TargetsDir)/MA35H0/MA35H0_MemoryMap.xml" />
+			<cdefine name="__MA35H04F764C__" />
+			<cdefine name="__MA35H0_FAMILY" />
+		</groupEntry>
+	</group>
+	<group short="Section Placement" group="Build Options" long="Select a set of options based on section placement." name="Placement" default="SRAM">
+		<groupEntry name="SRAM">
+			<property name="linker_section_placement_file" value="$(StudioDir)/targets/internal_sram_placement.xml" />
+			<property name="arm_target_loader_applicable_loaders" value=""/>
+			<property name="arm_target_loader_default_loader" value=""/>
+			<property name="target_reset_script" value="Reset()"/>
+			<cdefine name="NO_CACHE_ENABLE"/>
+		</groupEntry>
+	</group>
+	<group short="Startup From Reset" group="Build Options" long="Specify whether application will startup up by itself from reset." name="Startup" default="Release Only">
+		<groupEntry name="No" />
+			<groupEntry name="Release Only">
+			<cdefine name="STARTUP_FROM_RESET" configuration="Release" />
+		</groupEntry>
+			<groupEntry name="Yes">
+			<cdefine name="STARTUP_FROM_RESET" />
+		</groupEntry>
+	</group>
+</propertyGroups>
