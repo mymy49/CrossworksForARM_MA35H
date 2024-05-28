@@ -8,6 +8,7 @@
 		<propertygroup name="Target" value="MA35H04F764C" choose="Yes" />
 		<propertygroup name="Placement" value="Flash" choose="Yes" />
 		<property name="target_script_file" value="$(TargetsDir)/MA35H0/MA35H0_Target.js" />
+		<property name="target_connect_script" value="Connect()" />
 		<property name="target_reset_script" value="Reset();" />
 		<property name="linker_output_format" />
 		<property name="linker_printf_fmt_level" />

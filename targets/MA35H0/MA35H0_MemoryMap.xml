@@ -2,6 +2,9 @@
 <Root name="MA35H04F764C">
   <MemorySegment name="SRAM" start="0x24000000" size="0x00020000" />
   <MemorySegment name="SRAM1" start="0x28000000" size="0x00040000" />
-  <MemorySegment name="ROM" start="0x5FFC0000" size="0x00020000" />
+  <MemorySegment name="FLASH" start="0x00000000" size="0x00020000" />
+  <MemorySegment name="AHB" start="0x40040000" size="0x00391000" />
+  <MemorySegment name="AXI" start="0x50800000" size="0x00008000" />
+  <MemorySegment name="APB" start="0x40400000" size="0x00791000" />
 </Root>
 

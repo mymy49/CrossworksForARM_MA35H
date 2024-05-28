@@ -4,6 +4,12 @@
 		<groupEntry name="MA35H04F764C" family="MA35H0 Series">
 			<property name="arm_architecture" value="v8A" />
 			<property name="arm_core_type" value="Cortex-A35" />
+			<property name="arm_target_debug_interface_type" value="ADIv5" />
+			<property name="arm_target_trace_interface_type" value="ETB" />
+			<property name="arm_linker_jtag_pad_post_dr" value="0" />
+			<property name="arm_linker_jtag_pad_post_ir" value="0" />
+			<property name="arm_linker_jtag_pad_pre_dr" value="1" />
+			<property name="arm_linker_jtag_pad_pre_ir" value="6" />
 			<property name="arm_endian" value="Little" />
 			<property name="arm_fpu_type" value="None" />
 			<property name="arm_fp_abi" value="Soft" />

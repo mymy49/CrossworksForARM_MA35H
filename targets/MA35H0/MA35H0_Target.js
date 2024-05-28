@@ -9,6 +9,36 @@
  *                                                                           *
  *****************************************************************************/
 
+load("targets/Sitara/ICEPick.js")
+
+function ResetTAP()
+{  
+	// TAP Reset - TI's OMAP-3 requires 100 TCKs to get JTAG power domain working. 
+	TargetInterface.setTMS(1);
+	TargetInterface.cycleTCK(1000);
+	TargetInterface.setTMS(0); 
+	TargetInterface.cycleTCK(1);
+
+	ICEPickStart();   
+	//ICEPickAddTAP(11);  // CM3
+	ICEPickAddTAPAndCore(12, 0);  // CA8
+	ICEPickFinish();
+}
+
+function Connect()
+{
+	if (TargetInterface.implementation() == "j-link")
+		TargetInterface.setDebugInterfaceProperty("set_adiv5_APB_ap_num", 1);
+	else
+	{
+		TargetInterface.selectDevice(0, 0, 0, 0);
+		ResetTAP();  
+		TargetInterface.selectDevice(0, 6, 0, 1);
+		// DP locks up when accessing non-existent AP's
+		TargetInterface.setDebugInterfaceProperty("max_ap_num", 3);
+	}
+}
+
 function Reset()
 {
   if (TargetInterface.implementation() == "j-link")
@@ -16,28 +46,12 @@ function Reset()
   else
     {
 
-    }
+    }d
 }
 
 function GetPartName()
 {
-  var id = TargetInterface.peekWord(0x40000000);
-  var n = (id >> 8) & 0xFFF;
-  if (n == 0x481)
-    return "M481";
-  if (n == 0x482)
-    return "M482";
-  if (n == 0x483)
-    return "M483";
-  if (n == 0x484)
-    return "M484";
-  if (n == 0x484)
-    return "M484";
-  if (n == 0x485)
-    return "M485";
-  if (n == 0x487)
-    return "M487";
-  return "";
+	return "MA35H0";
 }
 
 function MatchPartName(name)
